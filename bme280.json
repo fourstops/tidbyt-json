@@ -1,5 +1,5 @@
 {
-    "feed_url": "https://tidbyt-json-display.s3.eu-west-1.amazonaws.com/example.json",
+    "feed_url": "http://192.168.0.89/bme280.json",
     "title_image": "https://tidbyt-json-display.s3.eu-west-1.amazonaws.com/heart.png",
     "title_text": "BME280",
     "data": [
