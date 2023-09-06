@@ -1,0 +1,22 @@
+{
+    "feed_url": "https://tidbyt-json-display.s3.eu-west-1.amazonaws.com/example.json",
+    "title_image": "https://tidbyt-json-display.s3.eu-west-1.amazonaws.com/heart.png",
+    "title_text": "BME280",
+    "data": [
+        {
+            "title": "Temperature",
+            "value": 26.390625,
+            "color": "FF0000"
+        },
+        {
+            "title": "Pressure",
+            "value": 1007.3044263859894,
+            "color": "00FF00"
+        },
+        {
+            "title": "Humidity",
+            "value": 56.461545075437755,
+            "color": "0000FF"
+        }
+    ]
+}
