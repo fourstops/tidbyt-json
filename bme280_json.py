@@ -11,9 +11,12 @@ now = datetime.now()
 current_time = now.strftime("%H:%M:%S")
 
 while True:
-    temperature = "{:.2f}".format(bme280.temperature)
-    pressure = "{:.2f}".format(bme280.pressure)
-    humidity = "{:.2f}".format(bme280.humidity)
+    tempc = bme280.temperature
+    tempf = tempc * 1.8 + 32
+
+    temperature = "{:.2f} F".format(tempf)
+    pressure = "{:.2f} hPa".format(bme280.pressure)
+    humidity = "{:.2f} %".format(bme280.humidity)
     
     data = {
         "feed_url": "http://192.168.0.89/bme280.json",
@@ -41,4 +44,4 @@ while True:
     # Convert the dictionary to a JSON string
     json_string = json.dumps(data, indent=4)
     print(json_string)
-    time.sleep(15)
+    time.sleep(4)
